@@ -8,11 +8,19 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-       
+    
+    //MARK: - IB Outlets
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var userNameTextPassword: UITextField!
+    
+    //MARK: - private properties
+    private let user = "User"
+    private let password = "Password"
+    
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let welcomeVC = segue.destination as! WeclomeViewController
+        welcomeVC.user = user
     }
     
 

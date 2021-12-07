@@ -89,6 +89,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0fX-vw-Kqh"/>
+                    <connections>
+                        <outlet property="userNameTextField" destination="OZp-9y-WSq" id="yTt-7f-mtM"/>
+                        <outlet property="userNameTextPassword" destination="h67-Bn-jVQ" id="l1X-wH-oQu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,13 +105,44 @@
                     <view key="view" contentMode="scaleToFill" id="agr-fw-anN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weclome 🥳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBB-5U-HAn">
+                                <rect key="frame" x="112.5" y="204" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="d8y-n4-20J"/>
+                                    <constraint firstAttribute="width" constant="150" id="gaB-5N-5Tc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLx-yD-6Na">
+                                <rect key="frame" x="37.5" y="262" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="JcD-46-uTW"/>
+                                    <constraint firstAttribute="height" constant="40" id="XDt-ds-eyN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bEO-ex-8nd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vLx-yD-6Na" firstAttribute="centerX" secondItem="agr-fw-anN" secondAttribute="centerX" id="1yY-n6-oZL"/>
+                            <constraint firstItem="KBB-5U-HAn" firstAttribute="top" secondItem="bEO-ex-8nd" secondAttribute="top" constant="204" id="Rqs-OJ-cK0"/>
+                            <constraint firstItem="KBB-5U-HAn" firstAttribute="centerX" secondItem="agr-fw-anN" secondAttribute="centerX" id="TAL-LY-rh5"/>
+                            <constraint firstItem="vLx-yD-6Na" firstAttribute="top" secondItem="KBB-5U-HAn" secondAttribute="bottom" constant="18" id="sIN-c4-4zq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="vLx-yD-6Na" id="fta-UT-nba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygj-tT-aHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="115"/>
+            <point key="canvasLocation" x="1813.5999999999999" y="114.69265367316342"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P1w-88-O2F">
